@@ -1,0 +1,27 @@
+{
+  "name": "stratvest-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "chrome-launcher": "^1.2.1",
+    "express": "^5.2.1",
+    "lighthouse": "^12.8.2",
+    "playwright": "^1.52.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.30",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.3"
+  }
+}
